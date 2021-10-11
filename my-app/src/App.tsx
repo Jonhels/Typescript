@@ -14,7 +14,14 @@ interface IState {
 
 function App() {
 
-  const [people, setPeople] = useState<IState["people"]>([])
+  const [people, setPeople] = useState<IState["people"]>([
+    {
+      name: "Lebron James",
+      url: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png",
+      age: 36,
+      note: "Allegeric to staying on the same team"
+    }
+  ])
 
   return (
     <div className="App">
